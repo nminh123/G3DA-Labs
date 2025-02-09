@@ -23119,6 +23119,7 @@ GameObject:
   - component: {fileID: 828754318}
   - component: {fileID: 828754317}
   - component: {fileID: 828754319}
+  - component: {fileID: 828754320}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -23133,7 +23134,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828754316}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
@@ -23229,6 +23230,23 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!114 &828754320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828754316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 470d49e30425f45a08161ab8dc3a813d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1703856209}
+  mapChunks:
+  - {fileID: 613434151}
+  chunkSize: 30
+  renderDistance: 2
 --- !u!1001 &830037529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40048,43 +40066,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a1bfe72fbc87d04e885296b53e91c66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  smoothCameraRotation: 12
-  cullingLayer:
-    m_Bits: 1
-  lockCamera: 0
-  rightOffset: 0
-  defaultDistance: 2.5
-  height: 1.4
-  smoothFollow: 10
-  xMouseSensitivity: 3
-  yMouseSensitivity: 3
-  yMinLimit: -40
-  yMaxLimit: 80
-  indexList: 0
-  indexLookPoint: 0
-  offSetPlayerPivot: 0
-  currentStateName: 
-  currentTarget: {fileID: 0}
-  movementSpeed: {x: 0, y: 0}
-  targetLookAt: {fileID: 0}
-  currentTargetPos: {x: 0, y: 0, z: 0}
-  lookPoint: {x: 0, y: 0, z: 0}
-  current_cPos: {x: 0, y: 0, z: 0}
-  desired_cPos: {x: 0, y: 0, z: 0}
-  _camera: {fileID: 0}
-  distance: 5
-  mouseY: 0
-  mouseX: 0
-  currentHeight: 0
-  cullingDistance: 0
-  checkHeightRadius: 0.4
-  clipPlaneMargin: 0
-  forward: -1
-  xMinLimit: -360
-  xMaxLimit: 360
-  cullingHeight: 0.2
-  cullingMinDist: 0.1
 --- !u!1001 &1500592854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43658,6 +43639,11 @@ MonoBehaviour:
   layerMask2:
     serializedVersion: 2
     m_Bits: 128
+--- !u!4 &1703856209 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 664e6998ef92f4f468a6439ccee9e128, type: 3}
+  m_PrefabInstance: {fileID: 2065664758}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1705097671
 PrefabInstance:
   m_ObjectHideFlags: 0
